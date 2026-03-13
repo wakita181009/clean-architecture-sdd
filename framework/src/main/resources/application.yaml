@@ -1,0 +1,15 @@
+spring:
+  main:
+    banner-mode: OFF
+  threads:
+    virtual:
+      enabled: true
+  datasource:
+    url: "jdbc:postgresql://${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DATABASE}"
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+  flyway:
+    enabled: true
+
+server:
+  port: 8080
